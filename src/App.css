@@ -1,0 +1,162 @@
+body {
+  box-shadow: 0 0 10px 5px black;
+  border-radius: 20px;
+  font-family: "Alegreya";
+  height: 97vh;
+  background: radial-gradient(circle, #fefaf9, #feb47b);
+}
+
+.ABC {
+  justify-content: center;
+  text-align: center;
+
+  height: 90vh;
+}
+
+.One {
+  h3 {
+    margin-top: 20rem;
+  }
+
+  display: flex;
+  gap: 0.75rem;
+
+  .One1 {
+    background: repeating-radial-gradient(
+      circle,
+      rgb(255, 88, 88),
+      rgb(68, 68, 68)
+    );
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 20px;
+    border: 2px solid cornsilk;
+    width: 25%;
+    text-align: center;
+    height: 97vh;
+    transition: padding-left 1s ease-out;
+    overflow: hidden;
+
+    ul {
+      font: bolder;
+      display: none;
+      text-shadow: 1px 10px 1px rgb(0, 0, 0);
+      background-color: rgba(215, 215, 215, 0.9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+     
+    
+    }
+
+    h3 {
+      position: relative;
+      margin-top: 20rem;
+    }
+  }
+
+  .One2 {
+    background-color: rgba(0, 0, 255, 0.4);
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 20px;
+    border: 2px solid cornsilk;
+    width: 25%;
+    text-align: center;
+    height: 97vh;
+    transition: padding-left 1s ease;
+    overflow: hidden;
+  }
+
+  .One3 {
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(124, 124, 124));
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 20px;
+    border: 2px solid cornsilk;
+    width: 25%;
+    /* text-align: center; */
+    height: 97vh;
+    transition: padding-right 1s ease;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    h3 {
+      margin-top: -198.25rem;
+    }
+  }
+
+  .One4 {
+    background-color: rgba(193, 125, 0, 0.4);
+    box-shadow: 0 0 10px 5px black;
+    border-radius: 20px;
+    border: 2px solid cornsilk;
+    width: 25%;
+    text-align: center;
+    height: 97vh;
+    transition: padding-right 1s ease;
+    overflow: hidden;
+  }
+
+  .One1:hover {
+    padding-left: 77rem;
+
+    /* transition: visiblity 0.5 ease; */
+    ul {
+      display: flex;
+      font-size: 2rem;
+      flex-wrap: nowrap;
+      position: relative;
+      right: 50rem;
+      top: 3rem;
+    }
+
+    ul:after {
+      visibility: hidden;
+    }
+
+    h3 {
+      position: fixed;
+      margin-top: -16rem;
+    }
+  }
+
+  .One2:hover {
+    padding-left: 77rem;
+  }
+
+  .One3:hover {
+    padding-right: 77rem;
+    transition: all 2s ease;
+
+    h3 {
+      position: fixed;
+    }
+
+    &::after {
+      h3 {
+        position: relative;
+      }
+    }
+  }
+
+  .One4:hover {
+    padding-right: 77rem;
+  }
+
+  .One3::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  /* Track */
+  .One3 h3::-webkit-scrollbar-track {
+    border-radius: 6px;
+  }
+
+  /* Handle */
+  .One3::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+  }
+
+  /* Handle on hover */
+  .One3::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+}

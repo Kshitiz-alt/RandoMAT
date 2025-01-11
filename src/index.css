@@ -1,0 +1,62 @@
+
+.Pictures {
+  margin-top: 130px;
+  display: flex;
+}
+
+.Pictures1 img {
+  
+  /* box-shadow: 0 0 10px 5px black; */
+  width: 20%;
+  overflow: hidden;
+  margin-top: -100rem;
+  transition: all 1s ease;
+}
+.Pictures1 img:hover{
+  box-shadow: 0 0 0px 0px black;
+  position: relative;
+  z-index: 1;
+  padding-left: 30rem;
+
+ 
+  width: 50%;
+}
+
+.dos-list {
+  list-style-type:none;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  width: 900%;
+  .dos-list1{
+    padding-top: 15rem;
+  }
+  .BackScroll{
+    text-align: center;
+    margin-top: 1rem;
+    justify-content: center;
+    color: rgb(63, 0, 0);
+    width: 120%;
+    transition:border 1s ease, box-shadow 1s ease ;
+
+  }
+  .BackScroll:hover{
+    box-shadow: 0 0 10px 5px black;
+    background: radial-gradient(circle, white,cornsilk);
+    border: 1px solid black;
+    border-radius: 100px;
+  }
+}
+.dos-list li {
+  display: flex;
+  flex-direction: column;
+  
+}
+.dos-list .Pictures {
+  width: 100%;
+}
+.Origin{
+  display: flex ;
+  flex-direction: column;
+  gap: 10rem;
+}
