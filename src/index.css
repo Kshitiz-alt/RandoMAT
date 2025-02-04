@@ -4,15 +4,15 @@
   display: flex;
 }
 
-.Pictures1 img {
+.Pictures0 img {
   
-  /* box-shadow: 0 0 10px 5px black; */
-  width: 20%;
+  box-shadow: 0 0 10px 5px black;
+  width: 40%;
   overflow: hidden;
   margin-top: -100rem;
   transition: all 1s ease;
 }
-.Pictures1 img:hover{
+.Pictures0 img:hover{
   box-shadow: 0 0 0px 0px black;
   position: relative;
   z-index: 1;
@@ -21,6 +21,27 @@
  
   width: 50%;
 }
+.Pictures1 img {
+  
+  box-shadow: 0 0 10px 5px black;
+  width: 50%;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-right: 70rem;
+  margin-left: -50rem;
+  transition: all 1s ease;
+}
+.Pictures1 img:hover{
+  box-shadow: 0 0 0px 0px black;
+  position: relative;
+  z-index: 1;
+  margin-left: -60rem;
+
+ 
+  width: 150%;
+}
+
+
 
 .dos-list {
   list-style-type:none;
@@ -52,7 +73,47 @@
   flex-direction: column;
   
 }
+
 .dos-list .Pictures {
+  width: 100%;
+}
+.dos-list10 {
+  list-style-type:none;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+  width: 900%;
+  .BackScroll{
+    text-align: center;
+    display: flex;
+    margin: 0rem -45rem;
+    margin-top: 1rem;
+    justify-content: center;
+    color: rgb(63, 0, 0);
+    width: 10%;
+    transition:border 1s ease, box-shadow 1s ease ;
+
+  }
+  .BackScroll:hover{
+    box-shadow: 0 0 10px 5px black;
+    background: radial-gradient(circle, white,cornsilk);
+    border: 1px solid black;
+    border-radius: 100px;
+  }
+  
+
+
+
+}
+.dos-list10 li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 150rem;
+  
+  
+}
+
+.dos-list10 .Pictures {
   width: 100%;
 }
 .Origin{

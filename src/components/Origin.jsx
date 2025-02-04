@@ -12,7 +12,7 @@ export default function Origin() {
 
             </div>
             <div className="Origin2">
-                I, Kshitiz (saiki) is the creator and you guys can check out my other Creations on GET US page!
+                I, Kshitiz is the creator and you guys can check out my other Creations on GET US page!
 
             </div>
 

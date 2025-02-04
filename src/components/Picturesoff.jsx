@@ -1,16 +1,28 @@
-
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import {Picturess} from '../assets'
-import Pictures from './Pictures'
 
-import '../index.css'
+import { Pictures } from '../assets'
+import Pictures0 from './Pictures0'
 
-export default function Picturesoff() {
+const Picturesoff = () => {
   return (
     <div className="Picturesoff">
-        {Picturess.map((item,index) => (<Pictures key={index} image={item.image} />))}
-      
+      {Pictures.map((item, index) => (<Pictures0 key={index} image={item.image} />))}
+
     </div>
   )
 }
+
+export default Picturesoff
+
+
+
+
+
+
+
+
+
+
+
+

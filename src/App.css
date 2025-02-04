@@ -44,8 +44,6 @@ body {
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-     
-    
     }
 
     h3 {
@@ -55,15 +53,26 @@ body {
   }
 
   .One2 {
-    background-color: rgba(0, 0, 255, 0.4);
+    background-color: rgba(0, 0, 255, 0.2);
     box-shadow: 0 0 10px 5px black;
     border-radius: 20px;
     border: 2px solid cornsilk;
     width: 25%;
     text-align: center;
     height: 97vh;
-    transition: padding-left 1s ease;
-    overflow: hidden;
+    transition: padding-left 1s ease, background-image 10s ease;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x:hidden;
+   
+   
+    li {
+      position: relative;
+    }
+    h3 {
+      margin-top: -338rem;
+    }
   }
 
   .One3 {
@@ -91,14 +100,13 @@ body {
     width: 25%;
     text-align: center;
     height: 97vh;
-    transition: padding-right 1s ease;
+    transition: padding-right 1.5s ease;
     overflow: hidden;
   }
 
   .One1:hover {
     padding-left: 77rem;
 
-    /* transition: visiblity 0.5 ease; */
     ul {
       display: flex;
       font-size: 2rem;
@@ -120,6 +128,21 @@ body {
 
   .One2:hover {
     padding-left: 77rem;
+    transition: all 2s ease;
+    h3 {
+      position: fixed;
+    }
+
+    &::after {
+      h3 {
+        position: relative;
+      }
+    }
+    li {
+      width: 50%;
+
+      position: relative;
+    }
   }
 
   .One3:hover {
@@ -134,6 +157,12 @@ body {
       h3 {
         position: relative;
       }
+
+    }
+    li {
+      width: 50%;
+
+      position: relative;
     }
   }
 
@@ -141,12 +170,31 @@ body {
     padding-right: 77rem;
   }
 
+  .One2::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  /* Track */
+  .One2::-webkit-scrollbar-track {
+    border-radius: 6px;
+  }
+
+  /* Handle */
+  .One2::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+  }
+
+  /* Handle on hover */
+  .One2::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
   .One3::-webkit-scrollbar {
     width: 12px;
   }
 
   /* Track */
-  .One3 h3::-webkit-scrollbar-track {
+  .One3::-webkit-scrollbar-track {
     border-radius: 6px;
   }
 
@@ -160,3 +208,11 @@ body {
     background: rgba(255, 255, 255, 0.8);
   }
 }
+
+/* .One:hover{
+  .One3{
+    h3{
+      
+    }
+  }
+} */
